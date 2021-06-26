@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  color: #29292e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  text-align: center;
+
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  background: #fefefe;
+  border-radius: 8px;
+
+  padding: 5rem;
+}
+
+strong {
+  font: 700 36px "Poppins", sans-serif;
+  line-height: 42px;
+  margin: 10px 0 30px 0;
+  color: #835afd;
+}
+
+.forms-input {
+  display: flex;
+  gap: 2rem;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+}
+
+form input,
+select {
+  height: 50px;
+  border-radius: 8px;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid #a8a8b3;
+  width: 100%;
+  margin-top: 1rem;
+
+  font: 400 18px "Roboto", sans-serif;
+}
+
+.data-nascimento,
+.data-expedicao,
+.form-identidade-values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+button {
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #835afd;
+  color: #fff;
+  padding: 0 32px;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: opacity 0.2s;
+
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+}

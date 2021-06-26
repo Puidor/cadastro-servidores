@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Cadastro - Servidores</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <strong>Cadastro de Servidores</strong>
+      <form>
+        <div class="forms-input">
+          <!-- LEFT SIDE -->
+          <div class="left-side">
+            <input type="text" placeholder="Nome do servidor" />
+            <input type="text" placeholder="Estado Civil" />
+            <input type="text" placeholder="Grupo Sanguineo" />
+            <input type="text" placeholder="Nome do Pai" />
+            <input type="text" placeholder="PIS/PASEP" />
+            <input type="text" placeholder="Identidade" />
+          </div>
+          <!-- END LEFT SIDE -->
+
+          <!-- RIGHT SIDE -->
+          <div class="right-side">
+            <input type="text" placeholder="CPF" />
+            <!--  Data de nascimento -->
+            <div class="data-nascimento">
+              <label for="birthday">Data de Nascimento</label>
+              <input type="date" id="birthday" name="birthday" />
+            </div>
+            <!--END Data de nascimento -->
+
+            <select id="country" name="country">
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+            <input type="text" placeholder="Dependentes IR" />
+            <input type="text" placeholder="Nome da Mãe" />
+
+            <!-- Outras informações do RG -->
+            <div class="form-identidade-values">
+              <input type="text" placeholder="Orgão Expedidor" />
+              <select>
+                <option value="">UF</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+
+              <!--  Data de expedição -->
+              <div class="data-expedicao">
+                <label for="birthday">Data de Expedição</label>
+                <input type="date" id="birthday" name="birthday" />
+              </div>
+              <!-- END Data de expedição -->
+            </div>
+            <!-- END Outras informações do RG -->
+          </div>
+          <!--END RIGHT SIDE -->
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>
